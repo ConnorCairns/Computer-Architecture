@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <ModuleSim>
-  <view camX="-705.5939335970663" camY="153.88780686253108" zoom="3"/>
+  <view camX="-711.8889780587942" camY="220.3663428285118" zoom="3"/>
   <ModuleSim>
     <module ID="0" type="ADDSUB">
       <dim orient="0" x="50.0" y="-350.0"/>
@@ -40,7 +40,7 @@
         <output ID="18"/>
         <output ID="19"/>
       </outputs>
-      <data latched_value="0100"/>
+      <data latched_value="0111"/>
     </module>
     <module ID="20" type="REGISTER">
       <dim orient="0" x="100.0" y="100.0"/>
@@ -53,7 +53,7 @@
         <output ID="23"/>
         <output ID="24"/>
       </outputs>
-      <data latched_value="0010"/>
+      <data latched_value="1101"/>
     </module>
     <module ID="25" type="REGISTER">
       <dim orient="0" x="50.0" y="-500.0"/>
@@ -65,7 +65,7 @@
         <output ID="28"/>
         <output ID="29"/>
       </outputs>
-      <data latched_value="0100"/>
+      <data latched_value="1000"/>
     </module>
     <module ID="30" type="CLOCK">
       <dim orient="2" x="-375.0" y="-250.0"/>
@@ -74,7 +74,7 @@
         <output ID="31"/>
         <output ID="32"/>
       </outputs>
-      <data clock_phase="1"/>
+      <data clock_phase="3"/>
     </module>
     <module ID="33" type="FANOUT">
       <dim orient="0" x="650.0" y="-50.0"/>
@@ -102,7 +102,7 @@
       </outputs>
     </module>
     <module ID="46" type="FANOUT">
-      <dim orient="3" x="650.0" y="150.0"/>
+      <dim orient="3" x="475.0" y="150.0"/>
       <inputs>
         <input ID="51"/>
       </inputs>
@@ -402,7 +402,7 @@
         <output ID="183"/>
         <output ID="184"/>
       </outputs>
-      <data latched_value="0000"/>
+      <data latched_value="0001"/>
     </module>
     <module ID="185" type="FANOUT">
       <dim orient="-1" x="2025.0" y="175.0"/>
@@ -427,6 +427,23 @@
         <output ID="195"/>
       </outputs>
       <data latched_value="0001"/>
+    </module>
+    <module ID="196" type="OR">
+      <dim orient="-1" x="625.0" y="125.0"/>
+      <inputs>
+        <input ID="202"/>
+        <input ID="203"/>
+        <input ID="204"/>
+        <input ID="205"/>
+        <input ID="206"/>
+      </inputs>
+      <outputs>
+        <output ID="197"/>
+        <output ID="198"/>
+        <output ID="199"/>
+        <output ID="200"/>
+        <output ID="201"/>
+      </outputs>
     </module>
   </ModuleSim>
   <links>
@@ -499,11 +516,6 @@
       <ctrlPt x="950.0" y="0.0"/>
       <ctrlPt x="650.0" y="0.0"/>
       <ctrlPt x="650.0" y="-25.0"/>
-    </link>
-    <link src="115" targ="51" type="StraightPath">
-      <ctrlPt x="800.0" y="-300.0"/>
-      <ctrlPt x="850.0" y="-300.0"/>
-      <ctrlPt x="850.0" y="150.0"/>
     </link>
     <link src="103" targ="98" type="StraightPath"/>
     <link src="114" targ="121" type="StraightPath">
@@ -616,6 +628,25 @@
     <link src="42" targ="116" type="StraightPath">
       <ctrlPt x="525.0" y="-200.0"/>
       <ctrlPt x="750.0" y="-200.0"/>
+    </link>
+    <link src="147" targ="203" type="StraightPath">
+      <ctrlPt x="1025.0" y="-300.0"/>
+      <ctrlPt x="975.0" y="-300.0"/>
+      <ctrlPt x="975.0" y="-100.0"/>
+      <ctrlPt x="825.0" y="-100.0"/>
+      <ctrlPt x="825.0" y="175.0"/>
+    </link>
+    <link src="148" targ="204" type="StraightPath">
+      <ctrlPt x="1050.0" y="-350.0"/>
+      <ctrlPt x="950.0" y="-350.0"/>
+      <ctrlPt x="950.0" y="-125.0"/>
+      <ctrlPt x="800.0" y="-125.0"/>
+      <ctrlPt x="800.0" y="150.0"/>
+    </link>
+    <link src="197" targ="51" type="StraightPath">
+      <ctrlPt x="625.0" y="225.0"/>
+      <ctrlPt x="525.0" y="225.0"/>
+      <ctrlPt x="525.0" y="150.0"/>
     </link>
   </links>
 </ModuleSim>
